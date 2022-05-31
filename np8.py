@@ -1,18 +1,13 @@
 import numpy as np
 
 
-def replace_array(array, num, replacer):
+def replace_array(array, num, replacer) -> np.array:
     """
-    Function that replace all numbers in a given array
-    which is equal, less and greater to a given number
-    :return: Replaced Arrays
+    Function that replaces all numbers in a given array
+    that are equal, less and greater to a given number
     """
-    print(f"\nReplace all elements equal to {num} by {replacer} ")
-    print(np.where(array == num, replacer, array))
-    print(f"\nReplace all elements less than {num} by {replacer} ")
-    print(np.where(array < num, replacer, array))
-    print(f"\nReplace all elements greater than {num} by {replacer} ")
-    print(np.where(array > num, replacer, array))
-
-
-
+    
+    array = np.where(array == num, replacer, array)
+    array = np.where(array < num, replacer, array)
+    array =np.where(array > num, replacer, array)
+    return array
