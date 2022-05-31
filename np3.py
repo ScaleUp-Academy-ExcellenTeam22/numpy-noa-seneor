@@ -1,14 +1,12 @@
 import numpy as np
 
 
-def row_columns(matrix):
+def row_columns(matrix) -> tuple:
     """
-    Function that find number of rows and columns of given matrix
-    :param matrix:
-    :return: (rows, columns)
+    Function that returns the  number of rows and columns of the given matrix
     """
     return matrix.shape
-
+    
 
 
 
