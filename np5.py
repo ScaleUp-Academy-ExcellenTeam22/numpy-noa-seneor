@@ -1,13 +1,11 @@
 import numpy as np
 
 
-def add_vector_to_matrix(vector, matrix):
+def add_vector_to_matrix(vector, matrix) -> np.array:
     """
-    Function that add a vector to each row of a given matrix
-    :return: matrix
+    Function that adds a vector to each row of a given matrix
     """
-    for i in range(matrix.shape[0]):
-        matrix[i] += vector
+    matrix += vector
     return matrix
 
 
