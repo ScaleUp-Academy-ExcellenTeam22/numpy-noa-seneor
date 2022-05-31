@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def np_vector():
+def np_vector() -> np.arange:
     """
     Function that create a vector with values from 0 to 20
     and change the sign of the numbers in the range from 9 to 15
